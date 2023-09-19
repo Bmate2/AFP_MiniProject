@@ -1,13 +1,19 @@
 ### 1. Áttekintés
    Az alkalmazás célja, hogy szimulálja egy számológép működését. Az alkalmazás HTML+JavaScript nyelven készült el. A felhasználó által megadott számolásokat végzi el. Miután végzett a program a számolással, kiírja a számolás végeredményét. Viszont, ha nem tudja kiszámítani a felhasználó által megadott számolást, akkor hiba üzenetet ír ki a felhasználó számára és új számolás adható meg. 
+
 ### 2. Jelenlegi helyzet leírása
     A megrendelő, egy kasszás boltos eladó, aki nem szeret fejben számolni és ehhez szeretne egy jól működő számológépet, amivel könnyedény kitudja számolni a visszajárót. 
-### 3. Vágyálomrendszer leírása
 
+### 3. Vágyálomrendszer leírása
+    
 ### 4. Jelenlegi üzleti folyamatok modellje
+    Jelenleg a kasszás kis összegeknél fejszámolást, nagyobb összegknél és kedvezményeknél papíron számítja ki a vásárlás végösszegét. Ez időigényes folyamat, ami a legtöbb esetben reklamációhoz vezet. 
 
 ### 5. Igényelt üzleti folyamatok modellje
+    Egy könnyen értelmezhető és gyors számológép biztosítása, ami felgyorsítja a kiszolgálás idejét és megkönnyíti a kasszás mindennapi munkáját. 
 
 ### 6. Követelménylista
+
+
 
 ### 7. Fogalomszótár
