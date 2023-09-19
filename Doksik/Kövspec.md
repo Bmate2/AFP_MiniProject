@@ -12,10 +12,10 @@
 >   Egy könnyen értelmezhető és gyors számológép biztosítása, ami felgyorsítja a kiszolgálás idejét és megkönnyíti a kasszás mindennapi munkáját. 
 
 ## 6. Követelménylista
->   | Modul       | Id | Név            | Kifejtés                    |
-    |-------------|----|----------------|-----------------------------|
-    | Felület     | 1  | Összeg kiírása | Kiírja a kiszámolt összeget |
-    | Modifikáció | 2  | Összeg kiírása | Kiírja a kiszámolt összeget |
+| Modul | Id | Név | Kifejtés | 
+|-------------|----|----------------|-----------------------------| 
+| Felület | 1 | Összeg kiírása | Kiírja a kiszámolt összeget | 
+| Modifikáció | 2 | Összeg kiírása | Kiírja a kiszámolt összeget |
 
 
 
