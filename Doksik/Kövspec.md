@@ -3,9 +3,8 @@
 
 ### 2. Jelenlegi helyzet leírása
     A megrendelő, egy kasszás boltos eladó, aki nem szeret fejben számolni és ehhez szeretne egy jól működő számológépet, amivel könnyedény kitudja számolni a visszajárót. 
-
 ### 3. Vágyálomrendszer leírása
-    
+    Egy minden szakmának megfelelő tudományos szuper számológép lenne a cél. A számológép tudna átváltani mindenféle mértékegységeket, esetleg a napi árfolyam alapján pénznemeket is tudna átváltani. Egy mesterséges intelligenciát össze kötni vele hogy esetleges nehezebb számolási feladatokat is megtudjon oldani.
 ### 4. Jelenlegi üzleti folyamatok modellje
     Jelenleg a kasszás kis összegeknél fejszámolást, nagyobb összegknél és kedvezményeknél papíron számítja ki a vásárlás végösszegét. Ez időigényes folyamat, ami a legtöbb esetben reklamációhoz vezet. 
 
