@@ -16,8 +16,8 @@
 |-------------|----|----------------|-----------------------------| 
 | Felület | 1 | Összeg kiírása | Kiírja a kiszámolt összeget | 
 | Felület | 2 | Számok 0-9 | A felhasználó ezen gombok megnyomásával tudja bevinni a számokat |
-| Modifikáció | 3 | Összeadás | 
+| Modifikáció | 3 | Összeadás | A felhasználó álltal beírt számok összeadása |
+| Modifikáció | 4 | Kivonás | A felhasználó álltal beírt számok kivonása egymásból |
+| Modifikáció | 5 | Szorzás | A felhasználó álltal beírt számok szorzata |
+| Modifikáció | 6 | Osztás | A felhasználó álltal beírt számok hányadosa |
 
-
-
-## 7. Fogalomszótár
