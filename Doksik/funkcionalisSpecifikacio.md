@@ -1,5 +1,7 @@
 ## 1. Áttekintés
 
+> Az alkalmazás célja, hogy szimulálja egy számológép működését. Az alkalmazás HTML+JavaScript nyelven készült el, és lehetővé teszi a felhasználó számára, hogy egyszerűen végrehajtsa matematikai számításait. A program képes elvégezni a felhasználó által megadott számolásokat, majd megjeleníti a számolás végeredményét. Amennyiben a program nem képes kiszámolni a felhasználó által megadott számolást, hibaüzenetet jelenít meg, és lehetőséget ad a felhasználónak az új számolás megadására.
+
 ## 2. Jelenlegi helyzet leírása
 
 > A megrendelő egy kasszás boltos eladó, aki nem szeret manuálisan számolni, és egy hatékony számológépre van szüksége, amely segíti őt a vásárlások során, különösen a visszajáró összeg kiszámításában.
