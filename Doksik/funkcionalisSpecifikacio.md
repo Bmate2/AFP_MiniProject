@@ -31,6 +31,8 @@
 ## 6. Használati esetek
 
 ## 7. Képernyőtervek
+![image](https://github.com/Bmate2/AFP_MiniProject/assets/145013912/9482faae-c93b-41ab-b4df-77d250d6f8b9)
+
 
 ## 8. Forgatókönyv
 
