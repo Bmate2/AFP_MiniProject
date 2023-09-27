@@ -30,6 +30,8 @@
 
 ## 6. Használati esetek
 
+> Felhasználó: Az alkalmazás lehetővé teszi, hogy a felhasználó egyszerűen és gyorsan elvégezze matematikai műveleteit, és megjelenítse az eredményeket. Ezzel javítja a hatékonyságot, csökkenti a hibák lehetőségét.
+
 ## 7. Képernyőtervek
 ![image](https://github.com/Bmate2/AFP_MiniProject/assets/145013912/9482faae-c93b-41ab-b4df-77d250d6f8b9)
 
