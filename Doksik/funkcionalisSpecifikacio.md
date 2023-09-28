@@ -8,19 +8,6 @@ A megrendelő egy kiskereskedelmi üzletben dolgozó pénztáros, aki nem kedvel
 
 ## 3. Követelménylista leírása
 
-<<<<<<< HEAD
-| Modul       | Id  | Név             | Kifejtés                                                           |
-| ----------- | --- | --------------- | ------------------------------------------------------------------ |
-| Felület     | 1   | Eredmény kiírása| Kiírja a kiszámolt eredményt                                       |
-| Felület     | 2   | Számok 0-9      | A felhasználó ezen gombok megnyomásával tudja bevinni a számokat   |
-| Modifikáció | 3   | Összeadás       | A felhasználó álltal beírt számok összeadása                       |
-| Modifikáció | 4   | Kivonás         | A felhasználó álltal beírt számok kivonása egymásból               |
-| Modifikáció | 5   | Szorzás         | A felhasználó álltal beírt számok szorzata                         |
-| Modifikáció | 6   | Osztás          | A felhasználó álltal beírt számok hányadosa                        |
-| Modifikáció | 7   | Százalék        | A felhasználó álltal beírt számnak egy bizonyos százalékát írja ki |
-| Modifikáció | 8   | Euróra váltás   | A kiszámolt termékek össszárát tudja átváltani Euró pénznembe      |
-| Modifikáció | 9   | Forintra váltás | A kiszámolt termékek össszárát tudja átváltani Forint pénznembe    |
-=======
 | Modul       | Id  | Név              | Kifejtés                                                           |
 | ----------- | --- | ---------------- | ------------------------------------------------------------------ |
 | Felület     | 1   | Eredmény kiírása | Kiírja a kiszámolt eredményt                                       |
@@ -31,7 +18,6 @@ A megrendelő egy kiskereskedelmi üzletben dolgozó pénztáros, aki nem kedvel
 | Modifikáció | 6   | Euróra váltás    | A kiszámolt termékek össszárát tudja átváltani Euró pénznembe      |
 | Modifikáció | 7   | Forintra váltás  | A kiszámolt termékek össszárát tudja átváltani Forint pénznembe    |
 | Modifikáció | 8   | Napi nyitó       | A felhasználó álltal beírt összeggel kezdett az adott napon        |
->>>>>>> d63a0b1287e501d5172cec81a50707323712e438
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 
