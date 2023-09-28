@@ -25,14 +25,18 @@ Jelenleg a kasszás boltos eladó manuálisan számol kisebb értékű vásárl�
 
 ## 5. Igényelt üzleti folyamatok modellje
 
-Az igényelt butított pénztárgép könnyen érthető és gyors szolgáltatást nyújtana, jelentősen felgyorsítva a vásárlások kiszolgálását és megkönnyítve a kasszás mindennapi munkáját.
+Az igényelt, egyszerűsített pénztárgép olyan eszköz lenne, amely könnyen érthető és gyors szolgáltatást nyújtana. Ezáltal a boltban történő vásárlások folyamata jelentősen felgyorsulna, ami mind a vásárlók, mind pedig a kasszások számára kényelmesebb élményt nyújtana.Az egyszerűsített pénztárgép segítségével a kasszások gyorsabban és hatékonyabban tudnák kiszolgálni a vásárlókat. Az intuitív felület és a könnyen kezelhető funkciók lehetővé tennék, hogy a kasszások gyorsan és pontosan számolják ki a vásárlások végösszegét, valamint alkalmazhassák a kedvezményeket is.Ez a változás nemcsak a vásárlásokat tenné zökkenőmentesebbé, de a kasszások mindennapi munkáját is megkönnyítené. Az egyszerűsített pénztárgép alkalmazása segítene minimalizálni a hibák lehetőségét, csökkentve ezzel a reklamációk számát és javítva az ügyfélszolgálat minőségét.
 
 ## 6. Használati esetek
 
-Felhasználó: Az alkalmazás lehetővé teszi, hogy a felhasználó egyszerűen és gyorsan elvégezze matematikai műveleteit, és megjelenítse az eredményeket. Ezzel javítja a hatékonyságot, csökkenti a hibák lehetőségét.
+Az alkalmazásunk két használati esettel rendelkezik ami az első ami a napi nyitás előtt van, ami csak abból áll hogy meg tudja adni hogy mennyi pénzzel kezdte az adott napot, a második eset amikor tudja használni a user az összes funkcióját a pénztárgépnek.
 
 ## 7. Képernyőtervek
 
 ![image](https://github.com/Bmate2/AFP_MiniProject/assets/145013912/9482faae-c93b-41ab-b4df-77d250d6f8b9)
 
 ## 8. Forgatókönyv
+
+## 9. Fogalomszótár
+
+user-felhasználó
