@@ -29,9 +29,15 @@ A rendszer célja, hogy a felhasználó bolti körülmények között tudjon tra
 
 ## 3. Üzleti folyamatok modellje
 
-
 ## 4. Követelmények
-    * Napnyitási felület, mely tartalmazza az adott munkanap pénzmenniységének eltárolási lehetőségét a műszak kezdésekor
+   * Napnyitási felület, mely tartalmazza az adott munkanap pénzmenniységének eltárolási lehetőségét a műszak kezdésekor, és továbblépést biztosít a pénztárgép felületére
+   * Napzárás funkció az adott nap pénzforgalmának logolására, a napokat egy fájlban, átláthatóan feltűntetve
+   * Árucikkek összegének inicializálása
+   * Árucikkek összegeinek inicializálása után e-összegek párhuzamos idejőbeli összegzése
+   * Valutaváltás, előzetes HUF érték eltárolása
+   * Tranzakció végrehajtás funkció, az érték eltárolásával (HUF)
+   * Vevő által nagyobb összeg átadása esetén visszajáró kiszámolása
+   * Nyugta kinyomtatása, egyidőben a tranzakció NAV felé való közlése (HUF)
 
 ### Funkcionális követelmények
 
@@ -41,28 +47,32 @@ A rendszer célja, hogy a felhasználó bolti körülmények között tudjon tra
 
 ### Nemfunkcionális követelmények
 
-| ID | Megnevezés | Leírás |
-| --- | --- | --- |
-| K4 | ... | ... |
-
-### Támogatott eszközök
+A felhasználó nem férhet hozzá az ideiglenes értéktároláshoz, azokat meg nem változtathatja.
 
 ## 5. Funkcionális terv
 
 ### 5.1 Rendszerszereplők
+Felhasználó
 
 ### 5.2 Menühierarchiák
+   * Napnyitás
+      * Kasszában lévő nyitóegyenleg 
+      * Belépés
+
+   * Munkafelület
 
 ## 6. Fizikai környezet
+   * Az alkalmazás web platformra készül
+   * Van tűzfal a hálózaton és minden portot is engedélyez
 
 ### Vásárolt softwarekomponensek és külső rendszerek
-
-### Hardver topológia
-
-### Fizikai alrendszerek
+   * Nincsenek megvásárolt komponensei
 
 ### Fejlesztő eszközök
+   * HTML+CSS
+   * JavaScript
 
+### 7. Abszrakt domain modell
 
 ## 8. Architekturális terv
 
@@ -71,8 +81,6 @@ A rendszer célja, hogy a felhasználó bolti körülmények között tudjon tra
 ### Adatbázis rendszer
 
 ### A program elérése, kezelése
-
-## 9. Adatbázis terv
 
 ## 10. Implementációs terv
 
