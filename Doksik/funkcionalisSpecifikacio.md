@@ -10,7 +10,7 @@
 
 | Modul       | Id  | Név             | Kifejtés                                                           |
 | ----------- | --- | --------------- | ------------------------------------------------------------------ |
-| Felület     | 1   | Összeg kiírása  | Kiírja a kiszámolt összeget                                        |
+| Felület     | 1   | Eredmény kiírása| Kiírja a kiszámolt eredményt                                       |
 | Felület     | 2   | Számok 0-9      | A felhasználó ezen gombok megnyomásával tudja bevinni a számokat   |
 | Modifikáció | 3   | Összeadás       | A felhasználó álltal beírt számok összeadása                       |
 | Modifikáció | 4   | Kivonás         | A felhasználó álltal beírt számok kivonása egymásból               |
@@ -37,5 +37,6 @@
 
 
 ## 8. Forgatókönyv
+
 
 ## 9. Fogalomszótár
