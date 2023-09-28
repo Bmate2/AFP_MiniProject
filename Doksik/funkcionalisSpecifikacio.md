@@ -13,20 +13,19 @@ A megrendelő egy kiskereskedelmi üzletben dolgozó pénztáros, aki nem kedvel
 | Felület     | 1   | Eredmény kiírása | Kiírja a kiszámolt eredményt                                       |
 | Felület     | 2   | Számok 0-9       | A felhasználó ezen gombok megnyomásával tudja bevinni a számokat   |
 | Modifikáció | 3   | Összeadás        | A felhasználó álltal beírt számok összeadása                       |
-| Modifikáció | 4   | Kivonás          | A felhasználó álltal beírt számok kivonása egymásból               |
-| Modifikáció | 5   | Szorzás          | A felhasználó álltal beírt számok szorzata                         |
-| Modifikáció | 6   | Osztás           | A felhasználó álltal beírt számok hányadosa                        |
-| Modifikáció | 7   | Százalék         | A felhasználó álltal beírt számnak egy bizonyos százalékát írja ki |
-| Modifikáció | 8   | Euróra váltás    | A kiszámolt termékek össszárát tudja átváltani Euró pénznembe      |
-| Modifikáció | 9   | Forintra váltás  | A kiszámolt termékek össszárát tudja átváltani Forint pénznembe    |
+| Modifikáció | 4   | Kivonás          | A felhasználó álltal beírt számok kivonása                         |
+| Modifikáció | 5   | Százalék         | A felhasználó álltal beírt számnak egy bizonyos százalékát írja ki |
+| Modifikáció | 6   | Euróra váltás    | A kiszámolt termékek össszárát tudja átváltani Euró pénznembe      |
+| Modifikáció | 7   | Forintra váltás  | A kiszámolt termékek össszárát tudja átváltani Forint pénznembe    |
+| Modifikáció | 8   | Napi nyitó       | A felhasználó álltal beírt összeggel kezdett az adott napon        |
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 
-Jelenleg a kasszás eladó kis összegű vásárlások esetén manuálisan számol, nagyobb összegű és kedvezményes vásárlásoknál pedig papíron végez számításokat a vásárlás végösszegének meghatározásához. Ez a folyamat időigényes, és gyakran vezet reklamációkhoz.
+Jelenleg a kasszás boltos eladó manuálisan számol kisebb értékű vásárlások esetén, míg nagyobb összegű vásárlásoknál vagy kedvezmények alkalmazása esetén papíron végez számításokat a vásárlás teljes összegének kiszámításához. Ez a folyamat nagy időráfordítást igényel, és gyakran eredményez hibákat, ami további reklamációkhoz vezethet.Az eladó jelenlegi módszere nem csak időigényes, hanem könnyen hibázható is, ami nemcsak a bolt hatékonyságát csökkenti, hanem a vásárlók elégedettségét is csökkentheti. Az új pénztárgép bevezetése lehetővé tenné, hogy az eladó gyorsabban és pontosabban számolja ki a vásárlások végső összegét, és akár automatikusan érvényesítse a kedvezményeket is, ami javítaná az ügyfélszolgálat minőségét és növelné a bolt hatékonyságát.
 
 ## 5. Igényelt üzleti folyamatok modellje
 
-Az igényelt számológép könnyen érthető és gyors szolgáltatást nyújtana, jelentősen felgyorsítva a vásárlások kiszolgálását és megkönnyítve a kasszás mindennapi munkáját.
+Az igényelt butított pénztárgép könnyen érthető és gyors szolgáltatást nyújtana, jelentősen felgyorsítva a vásárlások kiszolgálását és megkönnyítve a kasszás mindennapi munkáját.
 
 ## 6. Használati esetek
 
@@ -37,5 +36,3 @@ Felhasználó: Az alkalmazás lehetővé teszi, hogy a felhasználó egyszerűen
 ![image](https://github.com/Bmate2/AFP_MiniProject/assets/145013912/9482faae-c93b-41ab-b4df-77d250d6f8b9)
 
 ## 8. Forgatókönyv
-
-## 9. Fogalomszótár
