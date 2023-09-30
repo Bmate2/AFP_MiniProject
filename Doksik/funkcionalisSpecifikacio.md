@@ -1,6 +1,6 @@
 ## 1. Áttekintés
 
-Az alkalmazás célja, hogy szimulálja egy butított pénztárgép működését. Az alkalmazás HTML+JavaScript+CSS nyelven fog elkészülni, és lehetővé teszi a felhasználó számára, hogy egyszerűen végrehajtsa matematikai számításait. A program képes elvégezni a felhasználó által megadott számolásokat, majd megjeleníti a számolás végeredményét. Amennyiben a program nem képes kiszámolni a felhasználó által megadott számolást, hibaüzenetet jelenít meg, és lehetőséget ad a felhasználónak az új számolás megadására.
+Az alkalmazás célja, hogy emulálja egy egyszerű pénztárgép működését. Az alkalmazás HTML+JavaScript+CSS nyelveken fog elkészülni, és a felhasználó által megadott műveleteket hajtja végre. A program elindítása után a felhasználó első lépése a "NAPNYITÁS". A felhasználónak meg kell adnia a nyitó készpénz összegét, majd ezt az összeget be kell helyeznie a pénztárgépbe. A felhasználó különböző összegeket is hozzáadhat a pénztárgéphez. Az összegeket a pénztárgép tárolja egy gyűjtőben. Amikor a felhasználó befejezte az összegek hozzáadását, meg kell kérdeznie a vevőtől, hogy van-e kuponja, és ha igen, akkor felajánlhatja a vásárlónak, hogy használja azt. A végösszeget a kupon alapján különböző százalékokkal csökkentheti. A felhasználónak meg kell kérdeznie a vevőt, hogy euróban vagy forintban szeretne fizetni, és ezt egy "Átváltás EUR/HUF" gombbal teheti meg. A végleges összeget ki kell írni a képernyőre. A vásárló fizetése után a felhasználó a "Nyomtatás" gombbal blokkot nyomtathat a vásárlónak. Ha nincs más feladat a pénztárgép számára, a "Lezárás" gombbal kötelezően le kell zárni a pénztárgépet.
 
 ## 2. Jelenlegi helyzet leírása
 
@@ -36,7 +36,6 @@ Az alkalmazásunk két használati esettel rendelkezik ami az első ami a napi n
 ![image](https://github.com/Bmate2/AFP_MiniProject/assets/145013912/9482faae-c93b-41ab-b4df-77d250d6f8b9)
 
 ## 8. Forgatókönyv
-
 
 ## 9. Fogalomszótár
 
