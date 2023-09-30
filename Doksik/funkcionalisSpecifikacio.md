@@ -37,6 +37,8 @@ Az alkalmazásunk két használati esettel rendelkezik ami az első ami a napi n
 
 ## 8. Forgatókönyv
 
+A felhasználó megnyitja a programot és egy napnyitó gomb fogja fogadni ami mellett lesz egy szöveg doboz ahova be viheti azt az összeget amivel inditja a napot. Aztán át irányítjuk a pénztárgép felületre ahol megjelenik a digitális pénztárgép amin tudja végezni a számolásokat. A nap végén meg lezárja a kasszát egy nap zárás gombbal.
+
 ## 9. Fogalomszótár
 
 user-felhasználó
