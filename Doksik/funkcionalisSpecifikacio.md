@@ -1,6 +1,6 @@
 ## 1. Áttekintés
 
-Az alkalmazás célja, hogy szimulálja egy butított pénztárgép működését. Az alkalmazás HTML+JavaScript+CSS nyelven fog elkészülni, és lehetővé teszi a felhasználó számára, hogy egyszerűen végrehajtsa matematikai számításait. A program képes elvégezni a felhasználó által megadott számolásokat, majd megjeleníti a számolás végeredményét. Amennyiben a program nem képes kiszámolni a felhasználó által megadott számolást, hibaüzenetet jelenít meg, és lehetőséget ad a felhasználónak az új számolás megadására.
+Az alkalmazás célja, hogy emulálja egy egyszerű pénztárgép működését. Az alkalmazás HTML+JavaScript+CSS nyelveken fog elkészülni, és a felhasználó által megadott műveleteket hajtja végre. A program elindítása után a felhasználó első lépése a "NAPNYITÁS". A felhasználónak meg kell adnia a nyitó készpénz összegét, majd ezt az összeget be kell helyeznie a pénztárgépbe. A felhasználó különböző összegeket is hozzáadhat a pénztárgéphez. Az összegeket a pénztárgép tárolja egy gyűjtőben. Amikor a felhasználó befejezte az összegek hozzáadását, meg kell kérdeznie a vevőtől, hogy van-e kuponja, és ha igen, akkor felajánlhatja a vásárlónak, hogy használja azt. A végösszeget a kupon alapján különböző százalékokkal csökkentheti. A felhasználónak meg kell kérdeznie a vevőt, hogy euróban vagy forintban szeretne fizetni, és ezt egy "Átváltás EUR/HUF" gombbal teheti meg. A végleges összeget ki kell írni a képernyőre. A vásárló fizetése után a felhasználó a "Nyomtatás" gombbal blokkot nyomtathat a vásárlónak. Ha nincs más feladat a pénztárgép számára, a "Lezárás" gombbal kötelezően le kell zárni a pénztárgépet.
 
 ## 2. Jelenlegi helyzet leírása
 
@@ -8,19 +8,6 @@ A megrendelő egy kiskereskedelmi üzletben dolgozó pénztáros, aki nem kedvel
 
 ## 3. Követelménylista leírása
 
-<<<<<<< HEAD
-| Modul       | Id  | Név             | Kifejtés                                                           |
-| ----------- | --- | --------------- | ------------------------------------------------------------------ |
-| Felület     | 1   | Eredmény kiírása| Kiírja a kiszámolt eredményt                                       |
-| Felület     | 2   | Számok 0-9      | A felhasználó ezen gombok megnyomásával tudja bevinni a számokat   |
-| Modifikáció | 3   | Összeadás       | A felhasználó álltal beírt számok összeadása                       |
-| Modifikáció | 4   | Kivonás         | A felhasználó álltal beírt számok kivonása egymásból               |
-| Modifikáció | 5   | Szorzás         | A felhasználó álltal beírt számok szorzata                         |
-| Modifikáció | 6   | Osztás          | A felhasználó álltal beírt számok hányadosa                        |
-| Modifikáció | 7   | Százalék        | A felhasználó álltal beírt számnak egy bizonyos százalékát írja ki |
-| Modifikáció | 8   | Euróra váltás   | A kiszámolt termékek össszárát tudja átváltani Euró pénznembe      |
-| Modifikáció | 9   | Forintra váltás | A kiszámolt termékek össszárát tudja átváltani Forint pénznembe    |
-=======
 | Modul       | Id  | Név              | Kifejtés                                                           |
 | ----------- | --- | ---------------- | ------------------------------------------------------------------ |
 | Felület     | 1   | Eredmény kiírása | Kiírja a kiszámolt eredményt                                       |
@@ -31,7 +18,6 @@ A megrendelő egy kiskereskedelmi üzletben dolgozó pénztáros, aki nem kedvel
 | Modifikáció | 6   | Euróra váltás    | A kiszámolt termékek össszárát tudja átváltani Euró pénznembe      |
 | Modifikáció | 7   | Forintra váltás  | A kiszámolt termékek össszárát tudja átváltani Forint pénznembe    |
 | Modifikáció | 8   | Napi nyitó       | A felhasználó álltal beírt összeggel kezdett az adott napon        |
->>>>>>> d63a0b1287e501d5172cec81a50707323712e438
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 
@@ -51,6 +37,7 @@ Az alkalmazásunk két használati esettel rendelkezik ami az első ami a napi n
 
 ## 8. Forgatókönyv
 
+A felhasználó megnyitja a programot és egy napnyitó gomb fogja fogadni ami mellett lesz egy szöveg doboz ahova be viheti azt az összeget amivel inditja a napot. Aztán át irányítjuk a pénztárgép felületre ahol megjelenik a digitális pénztárgép amin tudja végezni a számolásokat. A nap végén meg lezárja a kasszát egy nap zárás gombbal.
 
 ## 9. Fogalomszótár
 

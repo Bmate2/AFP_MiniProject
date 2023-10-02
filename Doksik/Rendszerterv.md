@@ -27,11 +27,53 @@ A rendszer célja, hogy a felhasználó bolti körülmények között tudjon tra
 ### 2.4 Mérföldkövek:
    * Prototípus átadása: 2023.10.02. 12:30
 
-## 3. Üzleti folyamatok modellje
+## 3. Üzleti folyamatok modellje:
 
+Az üzleti folyamatok modelljének elkészítése során célszerű ábrák és leírások segítségével bemutatni, hogyan zajlanak le az egyes tevékenységek és folyamatok a rendszerben. Az alábbiakban néhány példa található az üzleti folyamatok modelljének kialakításához:
+
+3.1. Napnyitási folyamat:
+
+Cél: Az adott munkanap pénzmennyiségének eltárolása és a pénztárgép felületére való továbblépés.
+
+Folyamat:
+
+1.1. Felhasználó bejelentkezik a rendszerbe.
+1.2. A felhasználó kiválasztja a "Napnyitás" opciót.
+1.3. A rendszer lehetővé teszi a felhasználó számára a pénzmennyiség rögzítését a műszak kezdésekor.
+1.4. A rendszer engedélyezi a felhasználót, hogy továbblépjen a pénztárgép felületére.
+
+3.2. Tranzakció végrehajtás folyamata:
+
+Cél: Tranzakciók végrehajtása pénzhasználattal.
+
+Folyamat:
+
+1.1. Felhasználó választ egy árucikket a kínálatból.
+1.2. A rendszer lehetőséget ad az árucikk mennyiségének és értékének megadására (HUF).
+1.3. Ha a vevő nagyobb összeget ad át, mint amennyi a tranzakció értéke, a rendszer kiszámolja és visszaadja a visszajárót.
+1.4. A rendszer rögzíti a tranzakciót és a pénzforgalmat.
+
+3.3. Napzárás folyamata:
+
+Cél: Az adott nap pénzforgalmának logolása és átláthatóan történő tárolása.
+
+Folyamat:
+
+1.1. Felhasználó bejelentkezik a rendszerbe.
+1.2. A felhasználó választja a "Napzárás" opciót.
+1.3. A rendszer összegzi az adott nap során történt tranzakciókat és pénzmennyiségeket.
+
+Ezek csupán példák az üzleti folyamatok modelljének elkészítéséhez. A valóságban részletes folyamatokat és ábrákat is érdemes készíteni, hogy pontosan látható legyen, hogyan működik a rendszer a felhasználók szemszögéből.
 
 ## 4. Követelmények
-    * Napnyitási felület, mely tartalmazza az adott munkanap pénzmenniységének eltárolási lehetőségét a műszak kezdésekor
+   * Napnyitási felület, mely tartalmazza az adott munkanap pénzmenniységének eltárolási lehetőségét a műszak kezdésekor, és továbblépést biztosít a pénztárgép felületére
+   * Napzárás funkció az adott nap pénzforgalmának logolására, a napokat egy fájlban, átláthatóan feltűntetve
+   * Árucikkek összegének inicializálása
+   * Árucikkek összegeinek inicializálása után e-összegek párhuzamos idejőbeli összegzése
+   * Valutaváltás, előzetes HUF érték eltárolása
+   * Tranzakció végrehajtás funkció, az érték eltárolásával (HUF)
+   * Vevő által nagyobb összeg átadása esetén visszajáró kiszámolása
+   * Nyugta kinyomtatása, egyidőben a tranzakció NAV felé való közlése (HUF)
 
 ### Funkcionális követelmények
 
@@ -41,38 +83,80 @@ A rendszer célja, hogy a felhasználó bolti körülmények között tudjon tra
 
 ### Nemfunkcionális követelmények
 
-| ID | Megnevezés | Leírás |
-| --- | --- | --- |
-| K4 | ... | ... |
-
-### Támogatott eszközök
+A felhasználó nem férhet hozzá az ideiglenes értéktároláshoz, azokat meg nem változtathatja.
 
 ## 5. Funkcionális terv
 
 ### 5.1 Rendszerszereplők
+Felhasználó
 
 ### 5.2 Menühierarchiák
+   * Napnyitás
+      * Kasszában lévő nyitóegyenleg 
+      * Belépés
+
+   * Munkafelület
 
 ## 6. Fizikai környezet
+   * Az alkalmazás web platformra készül
+   * Van tűzfal a hálózaton és minden portot is engedélyez
 
 ### Vásárolt softwarekomponensek és külső rendszerek
-
-### Hardver topológia
-
-### Fizikai alrendszerek
+   * Nincsenek megvásárolt komponensei
 
 ### Fejlesztő eszközök
+   * HTML+CSS
+   * JavaScript
 
+### 7. Abszrakt domain modell
+
+Az absztrakt domain modell célja, hogy általánosan és absztrakt módon ábrázolja a rendszer fő komponenseit, entitásait és azok közötti kapcsolatokat.
+
+-Felhasználók: Felhasználók, akik a rendszert használják.
+-Felhasználók jogosultságokkal rendelkeznek a pénztár-nyitás és tranzakciók végrehajtása terén.
+
+Napnyitási Felület:
+-Az adott munkanap pénzmennyiségének eltárolására szolgáló felület
+-Lehetővé teszi a munkanap kezdeti pénzmennyiségének rögzítését.
+-Engedélyezi a továbblépést a pénztárgép felületére.
+
+Pénztárgép Felület: 
+-Az alapfunkciók végrehajtásara szolgáló felület.
+-Lehetővé teszi tranzakciók létrehozását és azok rögzítését.
+-Számolja és kezeli a visszajárót.
+
+Tranzakciók:
+-Az eladások vagy vásárlások rögzített eseményei.
+-Tartalmazzák az árucikkek, mennyiségek és értékek adatait.
+-A tranzakciókhoz kapcsolódik a visszajáró összeg.
+
+Ez egy egyszerű példa az absztrakt domain modellre. A valoságban a rendszer sokkal komplexebb lehet.
 
 ## 8. Architekturális terv
+
+Alkalmazás Réteg:
+
+Webes Felület (Frontend):
+-Az alkalmazás felhasználói felülete, amelyet a böngészőből érhetnek el a felhasználók.
+-Minimalista és intuitív tervezés a könnyű használhatóság érdekében.
+-A webes felület HTML, CSS és JavaScript technológiák segítségével készül.
+
+Kliensoldali Logika:
+-A frontend-en futó JavaScript alkalmazás, amely felelős a felhasználói interakciók kezeléséért.
+-Kommunikál a szerverrel API-hívások segítségével.
+
+Üzleti Logika Réteg:
+
+Szerveroldali Alkalmazás:
+-Ezen a rétegen fut az üzleti logika és a rendszer működésének alapja.
+-Kezeli a tranzakciók, az árucikkek, a pénzkezelés és a napzárás folyamatait.
+-Biztosítja az adatbázis hozzáférést.
 
 ### Webszerver
 
 ### Adatbázis rendszer
 
 ### A program elérése, kezelése
-
-## 9. Adatbázis terv
 
 ## 10. Implementációs terv
 
