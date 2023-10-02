@@ -4,11 +4,11 @@ Az alkalmazás célja, hogy szimuláljon egy butított pénztárgép működés�
 
 ## 2. Jelenlegi helyzet leírása
 
-> A megrendelő, egy kasszás boltos eladó, aki nincs megelégedve a jelenlegi pénztárgép működésével, ezért szeretne egy új, jobb felszereltségű, könyebben használható gépet az előző helyére, amivel könnyen végezheti a munkáját.
+> A megrendelő, egy árúház vezető, aki nincs megelégedve a jelenlegi pénztárgépek működésével, ezért szeretne egy új, jobb felszereltségű, könyebben használható prototípust az előző helyére, amivel könnyebben végezhetik a munkát az alkalmazottjai. A legnagyobb problémája, azzal van, hogy túl nagyok a sorok a kasszáknál, nehéz a haladás, ezért kevesebben vásárolnak. A másik problémája, hogy gyakran lefagynak a pénztárgépek, mert túl sok adat halmozódik fel bennük. A megoldás az lenne, ha gyorsabb, kevesebb gombnyomással működő pénztárgépeket használnának, hogy gyorsabban haladhassanak a sorok, ne terhelődjenek le a pénztárgépek annyira és ez által többen vásároljanak. 
 
 ## 3. Vágyálomrendszer leírása
 
-Egy minden szakmának megfelelő tudományos számológép lenne a cél. A számológép tudna átváltani valutát Euróra a napi árfolyam alapján. Képes legyen kedvezmények adása esetén %-ot számolni.
+A project célja, egy olyan egyszerű pénztárgép, amivel megkönyíthetjük a kasszánál dolgozó alkalmazottak életét. A tervezett gépünk könnyen kezelhető, kevés gombnyomást igénylő szerkezet. Könnyen elvégezhető a pénztárgépen a kötelező napi nyitás, illetve napi zárás. A vevő kiszolgálásnál az összegek könnyen felvihetők a pénztárgépbe. A felvitel után lehetőség nyílik arra, hogy a vevő használjon különböző kupont a fizetés előtt. A külföldi vevők számára biztosítunk eurós fizetési lehetőséget is. Az összeg felvitele után egy gombnyomással átváltható a forintban kiszámolt végösszeg euróba. Ha kifizette a vevő a vásárolt termékeket, a pénztárgép egy billentyű lenyomásával blokkot nyomtat a vevő számára a vett termékekről és azok árairól.
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 
