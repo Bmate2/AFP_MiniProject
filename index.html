@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .calculator {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        width: 200px;
+        padding-left: 10px;
+      }
+
+      .display {
+        margin-bottom: 10px;
+        text-align: right;
+        height: 25px;
+      }
+
+      button {
+        width: 45px;
+        height: 45px;
+        margin: 2px;
+      }
+      .clearBtn {
+        width: 200%;
+        background-color: red;
+        color: white;
+      }
+      .changer {
+        height: 100%;
+      }
+      .endDay {
+        width: 400%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <table>
+        <tr>
+          <div class="display" id="display">
+            <input
+              type="text"
+              name="calulatorText"
+              id="calulatorText"
+              disabled
+            />
+          </div>
+        </tr>
+        <tr>
+          <td>
+            <button class="clearBtn" onclick="clearDisplay()">Clear</button>
+          </td>
+          <td></td>
+          <td><button class="changer">HUF to EUR</button></td>
+          <td><button class="changer">EUR to HUF</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendNumber(7)">7</button></td>
+          <td><button onclick="appendNumber(8)">8</button></td>
+          <td><button onclick="appendNumber(9)">9</button></td>
+          <td><button onclick="">%</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendNumber(4)">4</button></td>
+          <td><button onclick="appendNumber(5)">5</button></td>
+          <td><button onclick="appendNumber(6)">6</button></td>
+          <td><button onclick="appendOperator('*')">*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendNumber(1)">1</button></td>
+          <td><button onclick="appendNumber(2)">2</button></td>
+          <td><button onclick="appendNumber(3)">3</button></td>
+          <td><button onclick="appendOperator('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendNumber(0)">0</button></td>
+          <td><button onclick="appendNumber('.')">,</button></td>
+          <td><button onclick="calculateResult()">=</button></td>
+          <td><button onclick="appendOperator('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="endDay" onclick="">END DAY</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      let display = document.getElementById("display");
+      let calculation = "";
+
+      function appendNumber(number) {
+        calculation += number;
+        display.textContent = calculation;
+      }
+
+      function appendOperator(operator) {
+        if (calculation === "") return;
+        calculation += operator;
+        display.textContent = calculation;
+      }
+
+      function clearDisplay() {
+        calculation = "";
+        display.textContent = "0";
+      }
+
+      function calculateResult() {
+        try {
+          display.textContent = eval(calculation);
+          calculation = "";
+        } catch (error) {
+          display.textContent = "Error";
+        }
+      }
+    </script>
+  </body>
+</html>
