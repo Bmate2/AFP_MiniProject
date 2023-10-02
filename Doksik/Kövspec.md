@@ -4,7 +4,7 @@
 
 ## 2. Jelenlegi helyzet leírása
 
-> A megrendelő, egy kasszás boltos eladó, aki nem szeret fejben számolni és ehhez szeretne egy jól működő számológépet, amivel könnyedény kitudja számolni a visszajárót.
+> A megrendelő, egy kasszás boltos eladó, aki nincs megelégedve a jelenlegi pénztárgép működésével, ezért szeretne egy új, jobb felszereltségű gépet, könyebben használható gépet az előző helyére, amivel könnyen végezheti a munkáját.
 
 ## 3. Vágyálomrendszer leírása
 
