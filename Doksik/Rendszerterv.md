@@ -110,7 +110,33 @@ Felhasználó
 
 ### 7. Abszrakt domain modell
 
+Az absztrakt domain modell célja, hogy általánosan és absztrakt módon ábrázolja a rendszer fő komponenseit, entitásait és azok közötti kapcsolatokat.
+
+Felhasználók: Felhasználók, akik a rendszert használják.
+Felhasználók jogosultságokkal rendelkeznek a pénztár-nyitás és tranzakciók végrehajtása terén.
+
+Napnyitási Felület:
+
+Az adott munkanap pénzmennyiségének eltárolására szolgáló felület
+Lehetővé teszi a munkanap kezdeti pénzmennyiségének rögzítését.
+Engedélyezi a továbblépést a pénztárgép felületére.
+
+Pénztárgép Felület: 
+
+Az alapfunkciók végrehajtásara szolgáló felület.
+Lehetővé teszi tranzakciók létrehozását és azok rögzítését.
+Számolja és kezeli a visszajárót.
+
+Tranzakciók:
+
+Az eladások vagy vásárlások rögzített eseményei.
+Tartalmazzák az árucikkek, mennyiségek és értékek adatait.
+A tranzakciókhoz kapcsolódik a visszajáró összeg.
+
+Ez egy egyszerű példa az absztrakt domain modellre. A valoságban a rendszer sokkal komplexebb lehet.
+
 ## 8. Architekturális terv
+
 
 ### Webszerver
 
