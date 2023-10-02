@@ -112,31 +112,45 @@ Felhasználó
 
 Az absztrakt domain modell célja, hogy általánosan és absztrakt módon ábrázolja a rendszer fő komponenseit, entitásait és azok közötti kapcsolatokat.
 
-Felhasználók: Felhasználók, akik a rendszert használják.
-Felhasználók jogosultságokkal rendelkeznek a pénztár-nyitás és tranzakciók végrehajtása terén.
+-Felhasználók: Felhasználók, akik a rendszert használják.
+-Felhasználók jogosultságokkal rendelkeznek a pénztár-nyitás és tranzakciók végrehajtása terén.
 
 Napnyitási Felület:
-
-Az adott munkanap pénzmennyiségének eltárolására szolgáló felület
-Lehetővé teszi a munkanap kezdeti pénzmennyiségének rögzítését.
-Engedélyezi a továbblépést a pénztárgép felületére.
+-Az adott munkanap pénzmennyiségének eltárolására szolgáló felület
+-Lehetővé teszi a munkanap kezdeti pénzmennyiségének rögzítését.
+-Engedélyezi a továbblépést a pénztárgép felületére.
 
 Pénztárgép Felület: 
-
-Az alapfunkciók végrehajtásara szolgáló felület.
-Lehetővé teszi tranzakciók létrehozását és azok rögzítését.
-Számolja és kezeli a visszajárót.
+-Az alapfunkciók végrehajtásara szolgáló felület.
+-Lehetővé teszi tranzakciók létrehozását és azok rögzítését.
+-Számolja és kezeli a visszajárót.
 
 Tranzakciók:
-
-Az eladások vagy vásárlások rögzített eseményei.
-Tartalmazzák az árucikkek, mennyiségek és értékek adatait.
-A tranzakciókhoz kapcsolódik a visszajáró összeg.
+-Az eladások vagy vásárlások rögzített eseményei.
+-Tartalmazzák az árucikkek, mennyiségek és értékek adatait.
+-A tranzakciókhoz kapcsolódik a visszajáró összeg.
 
 Ez egy egyszerű példa az absztrakt domain modellre. A valoságban a rendszer sokkal komplexebb lehet.
 
 ## 8. Architekturális terv
 
+Alkalmazás Réteg:
+
+Webes Felület (Frontend):
+-Az alkalmazás felhasználói felülete, amelyet a böngészőből érhetnek el a felhasználók.
+-Minimalista és intuitív tervezés a könnyű használhatóság érdekében.
+-A webes felület HTML, CSS és JavaScript technológiák segítségével készül.
+
+Kliensoldali Logika:
+-A frontend-en futó JavaScript alkalmazás, amely felelős a felhasználói interakciók kezeléséért.
+-Kommunikál a szerverrel API-hívások segítségével.
+
+Üzleti Logika Réteg:
+
+Szerveroldali Alkalmazás:
+-Ezen a rétegen fut az üzleti logika és a rendszer működésének alapja.
+-Kezeli a tranzakciók, az árucikkek, a pénzkezelés és a napzárás folyamatait.
+-Biztosítja az adatbázis hozzáférést.
 
 ### Webszerver
 
