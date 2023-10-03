@@ -32,4 +32,5 @@ Egy könnyen értelmezhető és gyors pénztárgép biztosítása, ami felgyors�
 | Modifikáció | 7   | ENTER          | A felhasználó blokkot nyomtat a vevő számára                     |
 | Modifikáció | 8   | Change to EUR  | A felhasználó át váltja a forintban lévő összeget euróba         |
 | Modifikáció | 9   | Kupon          | A végösszegből százalékosan levon bizonyos mennyiségű összeget   |
+| Modifikáció | 10  | Nyugtázás      | A felhasználó gombnyomás után nyugtát nyomtat                    |
 

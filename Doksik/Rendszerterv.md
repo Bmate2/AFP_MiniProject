@@ -149,8 +149,8 @@ Kliensoldali Logika:
 
 Szerveroldali Alkalmazás:
 -Ezen a rétegen fut az üzleti logika és a rendszer működésének alapja.
--Kezeli a tranzakciók, az árucikkek, a pénzkezelés és a napzárás folyamatait.
--Biztosítja az adatbázis hozzáférést.
+-Kezeli a tranzakciók, az árucikkek, a pénzkezelés és a napzárás,nyitás folyamatait.
+
 
 ### Webszerver
 
