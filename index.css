@@ -8,36 +8,37 @@ body {
 }
 
 .calculator {
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 5px;
   padding: 20px;
-  width: 200px;
+  width: 400px;
   padding-left: 10px;
 }
 
-.display {
+.display { 
   margin-bottom: 10px;
   text-align: right;
-  height: 25px;
+  height: 35px;  
 }
 
 button {
-  width: 45px;
+  width: 90px;
   height: 45px;
   margin: 2px;
 }
 .clearBtn {
-  width: 200%;
+  width: 95%;
   background-color: red;
   color: white;
 }
 
 .changer {
-  height: 100%;
+  width: 95%;
+  background-color: rgb(238, 255, 0);
+  color: rgb(0, 0, 0);
 }
-.endDay {
-  width: 400%;
-}
-.oday {
-  width: 400%;
+.receipt{
+  width: 95%;
+  background-color: rgb(5, 42, 253);
+  color: rgb(255, 255, 255);
 }

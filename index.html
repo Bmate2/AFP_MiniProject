@@ -21,14 +21,13 @@
         </tr>
         <tr>
           <td>
-            <button  class="disable"  onclick="clearDisplay()">Clear</button>
+          <button  class="clearBtn" class="disable"    onclick="clearDisplay()">Clear</button>
             <td>
-              <button  class="disable"  onclick="Receipt()">Receipt</button>
+             <button  class="receipt" onclick="Receipt()">Receipt</button>
             </td>
-          </td>
-          <td></td>
-          <td><button class="disable" class="changer"  onclick="hufToEur()">HUF to EUR</button></td>
-          <td><button class="disable" class="changer"  onclick="eurToHuf()">EUR to HUF</button></td>
+          </td>          
+          <td><button class="changer"  onclick="hufToEur()">HUF to EUR</button></td>
+          <td><button class="changer"  onclick="eurToHuf()">EUR to HUF</button></td>
         </tr>
         <tr>
           <td><button class="disable" onclick="appendNumber(7)">7</button></td>
@@ -57,10 +56,10 @@
         <tr>
           <td>
             <button class="oDay" id="openButton" onclick="openDay()">
-              OPEN
+              OPEN DAY
             </button>          
           <button  hidden class="cDay" id="closeButton" onclick="closeDay()">
-            CLOSE
+             CLOSE DAY
           </button>
           </td>
         </tr>
@@ -159,6 +158,8 @@
        // betöltéskor gombok letiltása
        disableButtons("disable");
        disableButtons("clearBtn");
+       disableButtons("changer");
+       disableButtons("receipt");
  
       // Napnyitás függvény ezzel az összes gomb aktiválása
       function openDay() {
@@ -173,7 +174,9 @@
          }
          else(alert(`Napi kezdő összeg: ${dailyStartAmount}`), display.textContent = "Enter approved",
          enableButtons("disable"),
-        enableButtons("clearBtn"),
+         enableButtons("clearBtn"),
+         enableButtons("changer"),
+         enableButtons("receipt"),
         document.getElementById('openButton').style.display = 'none',                
         document.getElementById('closeButton').style.display = 'block',
         isOpen = true)
@@ -193,6 +196,8 @@
         else(alert(`Daily income: ${DailyInCome}`), display.textContent = "Correct data",
         disableButtons("disable"),
         disableButtons("clearBtn"),
+        disableButtons("changer"),
+        disableButtons("receipt"),
         document.getElementById('openButton').style.display = 'block',               
         document.getElementById('closeButton').style.display = 'none',
         isOpen = false);        
