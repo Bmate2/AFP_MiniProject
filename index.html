@@ -159,7 +159,24 @@
        disableButtons("disable");
        disableButtons("clearBtn");
  
-
+      // Napnyitás függvény ezzel az összes gomb aktiválása
+      function openDay() {
+        const openButton = document.getElementById("openButton");
+            if (!isOpen) {
+              isOpen = true;
+        // prompt ablak ahol összeget kell megadni
+          dailyStartAmount = prompt("Kérem, adja meg a napi kezdő összeget:");
+            if (dailyStartAmount !== null) {
+        // napnyitás után további müveletet itt lehet magadni
+        alert(`Napi kezdő összeg: ${dailyStartAmount}`);
+        enableButtons("disable")
+        enableButtons("clearBtn")
+        document.getElementById('openButton').style.display = 'none';                
+        document.getElementById('closeButton').style.display = 'block';
+          }
+        }  
+      }
+            
        
 
     </script>
