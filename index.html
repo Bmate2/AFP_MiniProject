@@ -23,7 +23,7 @@
           <td>
             <button  class="disable"  onclick="clearDisplay()">Clear</button>
             <td>
-              <button  class="disable"  onclick="">Receipt</button>
+              <button  class="disable"  onclick="Receipt()">Receipt</button>
             </td>
           </td>
           <td></td>
@@ -163,43 +163,45 @@
       // Napnyitás függvény ezzel az összes gomb aktiválása
       function openDay() {
         const openButton = document.getElementById("openButton");
-            if (!isOpen) {
-              isOpen = true;
+            if (!isOpen) {              
         // prompt ablak ahol összeget kell megadni
           dailyStartAmount = prompt("Please enter the daily starting amount: ");
             if (dailyStartAmount !== null) {
         // napnyitás után további müveletet itt lehet magadni        
          if(dailyStartAmount < 0){
-          alert('Wrong data, please try again.',display.textContent = "Enter denied"),error         
+          alert(`Wrong data, daily starting amount is less than zero. Please try again.`,display.textContent = "Enter denied")      
          }
-         else(alert(`Napi kezdő összeg: ${dailyStartAmount}`), display.textContent = "Enter approved")
-        enableButtons("disable")
-        enableButtons("clearBtn")
-        document.getElementById('openButton').style.display = 'none';                
-        document.getElementById('closeButton').style.display = 'block';
+         else(alert(`Napi kezdő összeg: ${dailyStartAmount}`), display.textContent = "Enter approved",
+         enableButtons("disable"),
+        enableButtons("clearBtn"),
+        document.getElementById('openButton').style.display = 'none',                
+        document.getElementById('closeButton').style.display = 'block',
+        isOpen = true)
           }
         }  
       }
       
       function closeDay() {
         const closeButton = document.getElementById("closeButton");
-            if (isOpen) {
-              isOpen = false;
+            if (isOpen) {              
         // prompt ablak ahol összeget kell megadni
           DailyInCome = prompt("Please enter the daily revenue:");
             if (DailyInCome !== null) {
         // napnyitás után további müveletet itt lehet magadni        
          if(DailyInCome < dailyStartAmount || DailyInCome < 0)
-          alert('"Invalid input, daily revenue is less than the starting amount or less than zero."',display.textContent = "Wrong data"),error;
-        else(alert(`Daily income: ${DailyInCome}`), display.textContent = "Correct data");
-        disableButtons("disable")
-        disableButtons("clearBtn")
-        document.getElementById('openButton').style.display = 'block';                
-        document.getElementById('closeButton').style.display = 'none';
+          alert(`Invalid input, daily revenue is less than the starting amount or less than zero. Please try again. (${dailyStartAmount}Ft)`,display.textContent = "Wrong data");
+        else(alert(`Daily income: ${DailyInCome}`), display.textContent = "Correct data",
+        disableButtons("disable"),
+        disableButtons("clearBtn"),
+        document.getElementById('openButton').style.display = 'block',               
+        document.getElementById('closeButton').style.display = 'none',
+        isOpen = false);        
           }     
         }
       }
-       
+      function Receipt() {
+
+      }
 
     </script>
   </body>
