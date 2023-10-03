@@ -72,7 +72,7 @@
       let eredmeny = 0;
       let isOpen = false;      //Az oldal betöltésekor nincs nyitva a kassza
       let dailyStartAmount = 0; // A napi kezdőérték 0-ra állitása
-      let DailyInCome = 0; // A napi bevétel 0-ra állitása
+      let DailyInCome = 0; // A napi bevétel 0-ra állitása      
 
       function appendNumber(number) {
         calculation += number;
@@ -87,7 +87,7 @@
 
       function clearDisplay() {
         calculation = "";
-        display.textContent = "";
+        display.textContent = "0";
       }
 
       function calculateResult() {
@@ -169,10 +169,10 @@
           dailyStartAmount = prompt("Please enter the daily starting amount: ");
             if (dailyStartAmount !== null) {
         // napnyitás után további müveletet itt lehet magadni        
-         if(dailyStartAmount < 0){
-          alert(`Wrong data, daily starting amount is less than zero. Please try again.`,display.textContent = "Enter denied")      
+         if(dailyStartAmount < 1 || ""){
+          alert(`Invalid input, daily starting amount is less than zero or wrong data Please try again.`,display.textContent = "Enter denied")      
          }
-         else(alert(`Napi kezdő összeg: ${dailyStartAmount}`), display.textContent = "Enter approved",
+         else(alert(`Daily starting amount: ${dailyStartAmount}`), display.textContent = "Enter approved",
          enableButtons("disable"),
          enableButtons("clearBtn"),
          enableButtons("changer"),
@@ -191,8 +191,8 @@
           DailyInCome = prompt("Please enter the daily revenue:");
             if (DailyInCome !== null) {
         // napnyitás után további müveletet itt lehet magadni        
-         if(DailyInCome < dailyStartAmount || DailyInCome < 0)
-          alert(`Invalid input, daily revenue is less than the starting amount or less than zero. Please try again. (${dailyStartAmount}Ft)`,display.textContent = "Wrong data");
+         if(DailyInCome < dailyStartAmount || DailyInCome < 1 || "")
+          alert(`Invalid input, daily revenue is less than the starting amount or less than zero or wrong data. Please try again. (${dailyStartAmount}Ft)`,display.textContent = "Wrong data");
         else(alert(`Daily income: ${DailyInCome}`), display.textContent = "Correct data",
         disableButtons("disable"),
         disableButtons("clearBtn"),
@@ -205,8 +205,15 @@
         }
       }
       function Receipt() {
-
-      }
+    //Receipt gomb lenyomása után elkell fogadni hogy biztosan szeretnéd-e ezt lejelenteni és nyugtázni. 
+    const isReportedToNav = confirm(`Transaction amount: ${eredmeny}\nReport to NAV?`);    
+    //Ha elfogadod akkor ezt adja ki
+    if (isReportedToNav)
+      alert("Transaction has been reported to NAV.");
+    //ha nem akkor ezt
+    else(alert("The transaction has been deleted."));
+    //----FONTOS CSAK AKKOR FOG JÓ ÉRTÉKET ADNI HA RECEIPT GOMB ELÖTT EGYENLŐSÉG-ET
+  } 
 
     </script>
   </body>
