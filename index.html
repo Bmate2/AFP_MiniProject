@@ -71,7 +71,7 @@
           <td><button onclick="appendNumber(7)">7</button></td>
           <td><button onclick="appendNumber(8)">8</button></td>
           <td><button onclick="appendNumber(9)">9</button></td>
-          <td><button onclick="percentage()">%</button></td>
+          <td><button onclick="calculatePercentage()">%</button></td>
         </tr>
         <tr>
           <td><button onclick="appendNumber(4)">4</button></td>
@@ -125,6 +125,27 @@
           display.textContent = "Error";
         }
       }
+      function calculatePercentage() {
+  if (calculation === "") return;  
+  //megkeresi az utolsó operátort
+  let lastOperatorIndex = calculation.lastIndexOf("+");
+  lastOperatorIndex = Math.max(lastOperatorIndex, calculation.lastIndexOf("-"));
+  lastOperatorIndex = Math.max(lastOperatorIndex, calculation.lastIndexOf("*"));
+  lastOperatorIndex = Math.max(lastOperatorIndex, calculation.lastIndexOf("/"));
+  //ha nincs nem csinál semmit
+  if (lastOperatorIndex === -1) return;
+  //kivágja az első számot
+  const firstNumber = calculation.substring(lastOperatorIndex + 1);
+  //kiszámolja a százalék értéket
+  const percentageValue = parseFloat(firstNumber) / 100;
+  //kivonja a százalékot az első értékből
+  const result = parseFloat(calculation) - percentageValue * parseFloat(calculation);
+  //megjeleniti az eredményt
+  display.textContent = result;
+  calculation = result.toString();
+}
+
+      
     </script>
   </body>
 </html>
