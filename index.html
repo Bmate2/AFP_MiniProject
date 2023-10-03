@@ -72,7 +72,8 @@
       let calculation = "";
       let eredmeny = 0;
       let isOpen = false;      //Az oldal betöltésekor nincs nyitva a kassza
-      let dailyStartAmount = null; // A napi kezdőérték 0-ra állitása
+      let dailyStartAmount = 0; // A napi kezdőérték 0-ra állitása
+      let DailyInCome = 0; // A napi bevétel 0-ra állitása
 
       function appendNumber(number) {
         calculation += number;
@@ -169,6 +170,10 @@
             if (dailyStartAmount !== null) {
         // napnyitás után további müveletet itt lehet magadni
         alert(`Napi kezdő összeg: ${dailyStartAmount}`);
+         if(dailyStartAmount < 0){
+          alert('Hibás bevitel',display.textContent = "Enter denied"),error;
+          
+         }
         enableButtons("disable")
         enableButtons("clearBtn")
         document.getElementById('openButton').style.display = 'none';                
@@ -176,7 +181,25 @@
           }
         }  
       }
-            
+      
+      function closeDay() {
+        const closeButton = document.getElementById("closeButton");
+            if (isOpen) {
+              isOpen = false;
+        // prompt ablak ahol összeget kell megadni
+          DailyInCome = prompt("Kérem adja meg a napi bevételt:");
+            if (DailyInCome !== null) {
+        // napnyitás után további müveletet itt lehet magadni
+        alert(`Napi bevétel: ${dailyStartAmount}`);
+         if(DailyInCome < dailyStartAmount || DailyInCome < 0)
+          alert('Hibás bevitel, kevesebb a napi bevétel mint a kezdő összeg vagy kevesebb az érték 0-nál',display.textContent = "Enter denied"),error;
+        disableButtons("disable")
+        disableButtons("clearBtn")
+        document.getElementById('openButton').style.display = 'block';                
+        document.getElementById('closeButton').style.display = 'none';
+          }     
+        }
+      }
        
 
     </script>
