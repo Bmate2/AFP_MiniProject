@@ -24,8 +24,8 @@
             <button class="clearBtn" onclick="clearDisplay()">Clear</button>
           </td>
           <td></td>
-          <td><button class="changer">HUF to EUR</button></td>
-          <td><button class="changer">EUR to HUF</button></td>
+          <td><button class="changer" onclick="hufToEur()">HUF to EUR</button></td>
+          <td><button class="changer" onclick="eurToHuf()">EUR to HUF</button></td>
         </tr>
         <tr>
           <td><button onclick="appendNumber(7)">7</button></td>
@@ -64,6 +64,7 @@
     <script>
       let display = document.getElementById("display");
       let calculation = "";
+      let eredmeny = 0;
 
       function appendNumber(number) {
         calculation += number;
@@ -84,11 +85,13 @@
       function calculateResult() {
         try {
           display.textContent = eval(calculation);
+          eredmeny = eval(calculation);
           calculation = "";
         } catch (error) {
           display.textContent = "Error";
         }
       }
+
       function calculatePercentage() {
         if (calculation === "") return;
         //megkeresi az utolsó operátort
@@ -118,6 +121,17 @@
         display.textContent = result;
         calculation = result.toString();
       }
+
+      function hufToEur(){
+          eredmeny = (eredmeny / 389).toFixed(2);
+          display.textContent = eredmeny.toString();
+      } 
+      function eurToHuf(){
+        eredmeny = (eredmeny * 389);
+        display.textContent = eredmeny.toString();
+       
+      }
+
       function toggleBusinessHours() {}
     </script>
   </body>
