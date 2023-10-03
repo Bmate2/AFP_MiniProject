@@ -177,6 +177,7 @@
          enableButtons("clearBtn"),
          enableButtons("changer"),
          enableButtons("receipt"),
+         alert("The opening of the cash register has been officially communicated to NAV."),
         document.getElementById('openButton').style.display = 'none',                
         document.getElementById('closeButton').style.display = 'block',
         isOpen = true)
@@ -198,6 +199,7 @@
         disableButtons("clearBtn"),
         disableButtons("changer"),
         disableButtons("receipt"),
+        alert("We have reported the cash register closure to NAV."),
         document.getElementById('openButton').style.display = 'block',               
         document.getElementById('closeButton').style.display = 'none',
         isOpen = false);        
@@ -212,7 +214,7 @@
       alert("Transaction has been reported to NAV.");
     //ha nem akkor ezt
     else(alert("The transaction has been deleted."));
-    //----FONTOS CSAK AKKOR FOG JÓ ÉRTÉKET ADNI HA RECEIPT GOMB ELÖTT EGYENLŐSÉG-ET
+    //----FONTOS CSAK AKKOR FOG JÓ ÉRTÉKET ADNI HA RECEIPT GOMB ELÖTT EGYENLŐSÉG-ET NYOM
   } 
 
     </script>
