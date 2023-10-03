@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.display {
+  margin-bottom: 10px;
+  text-align: right;
+  height: 25px;
+}
+
+button {
+  width: 45px;
+  height: 45px;
+  margin: 2px;
+}
+.clearBtn {
+  width: 200%;
+  background-color: red;
+  color: white;
+}
+.changer {
+  height: 100%;
+}
+.endDay {
+  width: 400%;
+}

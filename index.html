@@ -4,47 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Cash Register</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-      }
-
-      .calculator {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 20px;
-        width: 200px;
-        padding-left: 10px;
-      }
-
-      .display {
-        margin-bottom: 10px;
-        text-align: right;
-        height: 25px;
-      }
-
-      button {
-        width: 45px;
-        height: 45px;
-        margin: 2px;
-      }
-      .clearBtn {
-        width: 200%;
-        background-color: red;
-        color: white;
-      }
-      .changer {
-        height: 100%;
-      }
-      .endDay {
-        width: 400%;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="calculator">
@@ -92,14 +52,18 @@
           <td><button onclick="appendOperator('+')">+</button></td>
         </tr>
         <tr>
-          <td><button class="endDay" onclick="toggleBusinessHours()">END DAY</button></td>
+          <td>
+            <button class="endDay" onclick="toggleBusinessHours()">
+              END DAY
+            </button>
+          </td>
         </tr>
       </table>
     </div>
 
     <script>
       let display = document.getElementById("display");
-      let calculation = "";      
+      let calculation = "";
 
       function appendNumber(number) {
         calculation += number;
@@ -126,28 +90,35 @@
         }
       }
       function calculatePercentage() {
-        if (calculation === "") return;  
-      //megkeresi az utolsó operátort
-      let lastOperatorIndex = calculation.lastIndexOf("+");
-      lastOperatorIndex = Math.max(lastOperatorIndex, calculation.lastIndexOf("-"));
-      lastOperatorIndex = Math.max(lastOperatorIndex, calculation.lastIndexOf("*"));
-      lastOperatorIndex = Math.max(lastOperatorIndex, calculation.lastIndexOf("/"));
-      //ha nincs nem csinál semmit
+        if (calculation === "") return;
+        //megkeresi az utolsó operátort
+        let lastOperatorIndex = calculation.lastIndexOf("+");
+        lastOperatorIndex = Math.max(
+          lastOperatorIndex,
+          calculation.lastIndexOf("-")
+        );
+        lastOperatorIndex = Math.max(
+          lastOperatorIndex,
+          calculation.lastIndexOf("*")
+        );
+        lastOperatorIndex = Math.max(
+          lastOperatorIndex,
+          calculation.lastIndexOf("/")
+        );
+        //ha nincs nem csinál semmit
         if (lastOperatorIndex === -1) return;
-      //kivágja az első számot
-      const firstNumber = calculation.substring(lastOperatorIndex + 1);
-      //kiszámolja a százalék értéket
-      const percentageValue = parseFloat(firstNumber) / 100;
-      //kivonja a százalékot az első értékből
-      const result = parseFloat(calculation) - percentageValue * parseFloat(calculation);
-      //megjeleniti az eredményt
-      display.textContent = result;
-      calculation = result.toString();
+        //kivágja az első számot
+        const firstNumber = calculation.substring(lastOperatorIndex + 1);
+        //kiszámolja a százalék értéket
+        const percentageValue = parseFloat(firstNumber) / 100;
+        //kivonja a százalékot az első értékből
+        const result =
+          parseFloat(calculation) - percentageValue * parseFloat(calculation);
+        //megjeleniti az eredményt
+        display.textContent = result;
+        calculation = result.toString();
       }
-      function toggleBusinessHours() {
-  
-}
-      
+      function toggleBusinessHours() {}
     </script>
   </body>
 </html>
