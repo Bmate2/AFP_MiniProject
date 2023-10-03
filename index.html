@@ -166,14 +166,13 @@
             if (!isOpen) {
               isOpen = true;
         // prompt ablak ahol összeget kell megadni
-          dailyStartAmount = prompt("Kérem, adja meg a napi kezdő összeget:");
+          dailyStartAmount = prompt("Please enter the daily starting amount: ");
             if (dailyStartAmount !== null) {
-        // napnyitás után további müveletet itt lehet magadni
-        alert(`Napi kezdő összeg: ${dailyStartAmount}`);
+        // napnyitás után további müveletet itt lehet magadni        
          if(dailyStartAmount < 0){
-          alert('Hibás bevitel',display.textContent = "Enter denied"),error;
-          
+          alert('Wrong data, please try again.',display.textContent = "Enter denied"),error         
          }
+         else(alert(`Napi kezdő összeg: ${dailyStartAmount}`), display.textContent = "Enter approved")
         enableButtons("disable")
         enableButtons("clearBtn")
         document.getElementById('openButton').style.display = 'none';                
@@ -187,12 +186,12 @@
             if (isOpen) {
               isOpen = false;
         // prompt ablak ahol összeget kell megadni
-          DailyInCome = prompt("Kérem adja meg a napi bevételt:");
+          DailyInCome = prompt("Please enter the daily revenue:");
             if (DailyInCome !== null) {
-        // napnyitás után további müveletet itt lehet magadni
-        alert(`Napi bevétel: ${dailyStartAmount}`);
+        // napnyitás után további müveletet itt lehet magadni        
          if(DailyInCome < dailyStartAmount || DailyInCome < 0)
-          alert('Hibás bevitel, kevesebb a napi bevétel mint a kezdő összeg vagy kevesebb az érték 0-nál',display.textContent = "Enter denied"),error;
+          alert('"Invalid input, daily revenue is less than the starting amount or less than zero."',display.textContent = "Wrong data"),error;
+        else(alert(`Daily income: ${DailyInCome}`), display.textContent = "Correct data");
         disableButtons("disable")
         disableButtons("clearBtn")
         document.getElementById('openButton').style.display = 'block';                
