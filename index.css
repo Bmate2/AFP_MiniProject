@@ -31,9 +31,13 @@ button {
   background-color: red;
   color: white;
 }
+
 .changer {
   height: 100%;
 }
 .endDay {
+  width: 400%;
+}
+.oday {
   width: 400%;
 }

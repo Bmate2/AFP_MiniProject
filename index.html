@@ -21,41 +21,47 @@
         </tr>
         <tr>
           <td>
-            <button class="clearBtn" onclick="clearDisplay()">Clear</button>
+            <button  class="disable"  onclick="clearDisplay()">Clear</button>
+            <td>
+              <button  class="disable"  onclick="">Receipt</button>
+            </td>
           </td>
           <td></td>
-          <td><button class="changer" onclick="hufToEur()">HUF to EUR</button></td>
-          <td><button class="changer" onclick="eurToHuf()">EUR to HUF</button></td>
+          <td><button class="disable" class="changer"  onclick="hufToEur()">HUF to EUR</button></td>
+          <td><button class="disable" class="changer"  onclick="eurToHuf()">EUR to HUF</button></td>
         </tr>
         <tr>
-          <td><button onclick="appendNumber(7)">7</button></td>
-          <td><button onclick="appendNumber(8)">8</button></td>
-          <td><button onclick="appendNumber(9)">9</button></td>
-          <td><button onclick="calculatePercentage()">%</button></td>
+          <td><button class="disable" onclick="appendNumber(7)">7</button></td>
+          <td><button class="disable" onclick="appendNumber(8)">8</button></td>
+          <td><button class="disable" onclick="appendNumber(9)">9</button></td>
+          <td><button class="disable" onclick="calculatePercentage()">%</button></td>
         </tr>
         <tr>
-          <td><button onclick="appendNumber(4)">4</button></td>
-          <td><button onclick="appendNumber(5)">5</button></td>
-          <td><button onclick="appendNumber(6)">6</button></td>
-          <td><button onclick="appendOperator('*')">*</button></td>
+          <td><button class="disable" onclick="appendNumber(4)">4</button></td>
+          <td><button class="disable" onclick="appendNumber(5)">5</button></td>
+          <td><button class="disable" onclick="appendNumber(6)">6</button></td>
+          <td><button class="disable" onclick="appendOperator('*')">*</button></td>
         </tr>
         <tr>
-          <td><button onclick="appendNumber(1)">1</button></td>
-          <td><button onclick="appendNumber(2)">2</button></td>
-          <td><button onclick="appendNumber(3)">3</button></td>
-          <td><button onclick="appendOperator('-')">-</button></td>
+          <td><button class="disable" onclick="appendNumber(1)">1</button></td>
+          <td><button class="disable" onclick="appendNumber(2)">2</button></td>
+          <td><button class="disable" onclick="appendNumber(3)">3</button></td>
+          <td><button class="disable" onclick="appendOperator('-')">-</button></td>
         </tr>
         <tr>
-          <td><button onclick="appendNumber(0)">0</button></td>
-          <td><button onclick="appendNumber('.')">,</button></td>
-          <td><button onclick="calculateResult()">=</button></td>
-          <td><button onclick="appendOperator('+')">+</button></td>
+          <td><button class="disable" onclick="appendNumber(0)">0</button></td>
+          <td><button class="disable" onclick="appendNumber('.')">,</button></td>
+          <td><button class="disable" onclick="calculateResult()">=</button></td>
+          <td><button class="disable" onclick="appendOperator('+')">+</button></td>
         </tr>
         <tr>
           <td>
-            <button class="endDay" onclick="toggleBusinessHours()">
-              END DAY
-            </button>
+            <button class="oDay" id="openButton" onclick="openDay()">
+              OPEN
+            </button>          
+          <button  hidden class="cDay" id="closeButton" onclick="closeDay()">
+            CLOSE
+          </button>
           </td>
         </tr>
       </table>
@@ -65,6 +71,8 @@
       let display = document.getElementById("display");
       let calculation = "";
       let eredmeny = 0;
+      let isOpen = false;      //Az oldal betöltésekor nincs nyitva a kassza
+      let dailyStartAmount = null; // A napi kezdőérték 0-ra állitása
 
       function appendNumber(number) {
         calculation += number;
@@ -131,8 +139,29 @@
         display.textContent = eredmeny.toString();
        
       }
+      // gombok letiltása
+      function disableButtons(className) {
+        const buttons = document.querySelectorAll(`button.${className}`);
+        buttons.forEach((button) => {
+        button.disabled = true;
+          });
+      }
 
-      function toggleBusinessHours() {}
+      // gombok aktiválása
+      function enableButtons(className) {
+         const buttons = document.querySelectorAll(`button.${className}`);
+         buttons.forEach((button) => {
+         button.disabled = false;
+            });
+      }
+
+       // betöltéskor gombok letiltása
+       disableButtons("disable");
+       disableButtons("clearBtn");
+ 
+
+       
+
     </script>
   </body>
 </html>
