@@ -1,6 +1,6 @@
 # AFP_MiniProject
 
-##Projekt tagjai:
+## Projekt tagjai:
   * Bodnár Máté
   * Császár Martin Krisztián
   * Guba József
