@@ -37,13 +37,13 @@ Cél: Az adott munkanap pénzmennyiségének eltárolása és a pénztárgép fe
 
 Folyamat:
 
-## 1.1. 
+ 1.1. 
  * Felhasználó bejelentkezik a rendszerbe.
-## 1.2. 
+ 1.2. 
  * A felhasználó kiválasztja a "Napnyitás" opciót.
-## 1.3. 
+ 1.3. 
  * A rendszer lehetővé teszi a felhasználó számára a pénzmennyiség rögzítését a műszak kezdésekor.
-## 1.4. 
+ 1.4. 
  * A rendszer engedélyezi a felhasználót, hogy továbblépjen a pénztárgép felületére.
 
 ## 3.2. Tranzakció végrehajtás folyamata:
@@ -52,13 +52,13 @@ Cél: Tranzakciók végrehajtása pénzhasználattal.
 
 Folyamat:
 
-## 1.1. 
+ 1.1. 
  * Felhasználó választ egy árucikket a kínálatból.
-## 1.2.
+ 1.2.
  * A rendszer lehetőséget ad az árucikk mennyiségének és értékének megadására (HUF).
-## 1.3.
+ 1.3.
  * Ha a vevő nagyobb összeget ad át, mint amennyi a tranzakció értéke, a rendszer kiszámolja és visszaadja a visszajárót.
-## 1.4.
+ 1.4.
  * A rendszer rögzíti a tranzakciót és a pénzforgalmat.
 
 ## 3.3. Napzárás folyamata:
@@ -67,11 +67,11 @@ Cél: Az adott nap pénzforgalmának logolása és átláthatóan történő tá
 
 Folyamat:
 
-## 1.1. 
+1.1. 
  * Felhasználó bejelentkezik a rendszerbe.
-## 1.2. 
+1.2. 
  * A felhasználó választja a "Napzárás" opciót.
-## 1.3. 
+1.3. 
  * A rendszer összegzi az adott nap során történt tranzakciókat és pénzmennyiségeket.
 
 Ezek csupán példák az üzleti folyamatok modelljének elkészítéséhez. A valóságban részletes folyamatokat és ábrákat is érdemes készíteni, hogy pontosan látható legyen, hogyan működik a rendszer a felhasználók szemszögéből.
