@@ -4,7 +4,7 @@ Az alkalmazás célja, hogy szimuláljon egy butított pénztárgép működés�
 
 ## 2. Jelenlegi helyzet leírása
 
-> A megrendelő, egy árúház vezető, aki nincs megelégedve a jelenlegi pénztárgépek működésével, ezért szeretne egy új, jobb felszereltségű, könyebben használható prototípust az előző helyére, amivel könnyebben végezhetik a munkát az alkalmazottjai. A legnagyobb problémája, azzal van, hogy túl nagyok a sorok a kasszáknál, nehéz a haladás, ezért kevesebben vásárolnak. A másik problémája, hogy gyakran lefagynak a pénztárgépek, mert túl sok adat halmozódik fel bennük. A megoldás az lenne, ha gyorsabb, kevesebb gombnyomással működő pénztárgépeket használnának, hogy gyorsabban haladhassanak a sorok, ne terhelődjenek le a pénztárgépek annyira és ez által többen vásároljanak. 
+> A megrendelő egy kiskereskedelmi üzletben dolgozó pénztáros, aki nincs megelégedve a jelenlegi pénztárgépek működésével, ezért szeretne egy új, jobb felszereltségű, könyebben használható prototípust az előző helyére, amivel könnyebben végezheti a munkáját. A legnagyobb problémája, azzal van,  hogy gyakran lefagynak a pénztárgépek, mert túl sok adat halmozódik fel bennük. A megoldás az lenne, ha gyorsabb, kevesebb gombnyomással működő pénztárgépeket használnának, hogy gyorsabban haladhassanak a sorok és ez által ne terhelődjenek le a pénztárgépek.
 
 ## 3. Vágyálomrendszer leírása
 
