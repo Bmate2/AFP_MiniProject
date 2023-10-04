@@ -161,9 +161,8 @@ Szerveroldali Alkalmazás:
 * Ezen a rétegen fut az üzleti logika és a rendszer működésének alapja.
 * Kezeli a tranzakciók, az árucikkek, a pénzkezelés és a napzárás,nyitás folyamatait.
 
-### Webszerver
-
 ### A program elérése, kezelése
+A programot a HTML kiterjesztésű fájllal lehet indítani, ami megnyitja online a programot.
 
 ## 10. Implementációs terv
 
@@ -180,27 +179,26 @@ Egy teszt eredményeit a tagok dokumentálják külön fájlokba.
  |-----------|-----------------| 
  | ... | ... |
 
-### A tesztelési jegyzőkönyv kitöltésére egy sablon:
+### A tesztelési jegyzőkönyv:
 
-**Tesztelő:** Vezetéknév Keresztnév
+**Tesztelő:** A csapat tagjai
 
-**Tesztelés dátuma:** Év.Hónap.Nap
+**Tesztelés dátuma:** 2023.10.04
 
 Tesztszám | Rövid leírás | Várt eredmény | Eredmény | Megjegyzés
 ----------|--------------|---------------|----------|-----------
-például. Teszt #01 | Regisztráció | A felhasználó az adatok megadásával sikeresen regisztrálni tud  | A felhasználó sikeresen regisztrált | Nem találtam problémát.
-... | ... | ... | ... | ...
+Teszt #01 | Napnyitás | A felhasználó a napi kezdő egyenleg megadásával aktiuválja a pénztárgép felületét.  | A felhasználó sikeresen felvitte az adatokat, a rendszer engedélyezte a pénztár használatát. | Nem találtam problémát.
+Teszt #02 | Gombok funkciói | Az összes gomb reagál a felhasználó által adott impulzusokra  | A felhasználó az összes gomb egymás utáni végigpróbálására mindegyik gomb reagál | Nem találtam problémát
+Teszt #03 | Megjelenítő | A felhasználó számára fontos számadatok és műveleti jelek megjelennek a kijelzőn | A kijelző megjeleníti az adatokat | Nem találtam hibát
+Teszt #04 | Műveletek | A felhasználó a bevitt adatokkal és műveleti jelek segítségével az "egyenlő" jel megnyomásával a kijelzőn a helyes érték jelenik meg | A program helyesen számol | Nem találtam hibát
+Teszt #05 | Valutaváltás | A vásárló összes árucikkének felvitele után a végösszeget lehessen euróra váltani, vagy adott esetben euróról vissza | Mindkét esetben helyes érték jelenik meg a kijelzőn az adott valutával kapcsolatban | Mindenképpen be kell vinni az adatot az "egyenlő" jellel, hogy e-funkció működjön 
 
 ## 12. Telepítési terv
-
-Fizikai telepítési terv: 
-
 Szoftver telepítési terv: 
+Nincs szükség külön telepítésre, a szoftver bármely webböngésző indításával futtatható.
 
 ## 13. Karbantartási terv
 
-Fontos ellenőrizni:
-...
 
 Figyelembe kell venni a felhasználó által jött visszajelzést is a programmal kapcsolatban.
 Ha hibát talált, mielőbb orvosolni kell, lehet az:
