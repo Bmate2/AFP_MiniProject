@@ -21,7 +21,7 @@ A megrendelő egy kiskereskedelmi üzletben dolgozó pénztáros, aki nem kedvel
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 
-Jelenleg a kasszás boltos eladó manuálisan számol kisebb értékű vásárlások esetén, míg nagyobb összegű vásárlásoknál vagy kedvezmények alkalmazása esetén papíron végez számításokat a vásárlás teljes összegének kiszámításához. Ez a folyamat nagy időráfordítást igényel, és gyakran eredményez hibákat, ami további reklamációkhoz vezethet.Az eladó jelenlegi módszere nem csak időigényes, hanem könnyen hibázható is, ami nemcsak a bolt hatékonyságát csökkenti, hanem a vásárlók elégedettségét is csökkentheti. Az új pénztárgép bevezetése lehetővé tenné, hogy az eladó gyorsabban és pontosabban számolja ki a vásárlások végső összegét, és akár automatikusan érvényesítse a kedvezményeket is, ami javítaná az ügyfélszolgálat minőségét és növelné a bolt hatékonyságát.
+Jelenleg a kasszás boltos eladó manuálisan számol kisebb értékű vásárlások esetén, míg nagyobb összegű vásárlásoknál vagy kedvezmények alkalmazása esetén papíron végez számításokat a vásárlás teljes összegének kiszámításához. Ez a folyamat nagy időráfordítást igényel, és gyakran eredményez hibákat, ami további reklamációkhoz vezethet. Az eladó jelenlegi módszere nem csak időigényes, hanem könnyen hibázható is, ami nemcsak a bolt hatékonyságát csökkenti, hanem a vásárlók elégedettségét is csökkentheti. Az új pénztárgép bevezetése lehetővé tenné, hogy az eladó gyorsabban és pontosabban számolja ki a vásárlások végső összegét, és akár automatikusan érvényesítse a kedvezményeket is, ami javítaná az ügyfélszolgálat minőségét és növelné a bolt hatékonyságát.
 
 ## 5. Igényelt üzleti folyamatok modellje
 
