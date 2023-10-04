@@ -33,8 +33,14 @@ Az igényelt, egyszerűsített pénztárgép olyan eszköz lenne, amely könnyen
 Az alkalmazásunk két használati esettel rendelkezik: Az első, ami a napi nyitás előtt van, csak abból áll hogy meg kell adni, hogy mennyi pénzzel kezdte az adott napot a felhasználó. A második eset amikor a usernek hozzáférése van az összes funkcióhoz a pénztárgépben.
 
 ## 7. Képernyőtervek
+**Napi nyitás előtt:**
 
-![image](https://github.com/Bmate2/AFP_MiniProject/assets/145013912/9482faae-c93b-41ab-b4df-77d250d6f8b9)
+![image](https://github.com/Bmate2/AFP_MiniProject/assets/116163837/bd79ab81-5ae5-472e-905c-4a247080e473)
+
+**Napi nyitás után:**
+
+![image](https://github.com/Bmate2/AFP_MiniProject/assets/116163837/615d5fb8-b66f-436c-8fd3-490f2db97db1)
+
 
 ## 8. Forgatókönyv
 
