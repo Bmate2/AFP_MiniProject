@@ -21,7 +21,7 @@ A rendszer célja, hogy a felhasználó bolti körülmények között tudjon tra
 |Rendszerterv             |Megírás                                 |         1 |             4 |                      4 |                5 |                   4 |
 |Program                  |Képernyőtervek elkészítése              |         2 |             1 |                      1 |                3 |                   2 |
 |Program                  |Prototípus elkészítése                  |         3 |             8 |                      8 |                8 |                   8 |
-|Program                  |Alapfunkciók elkészítése                |         3 |             10 |                      12 |                16 |                   12 |
+|Program                  |Alapfunkciók elkészítése                |         3 |             10|                      12|                16|                   12|
 |Program                  |Tesztelés                               |         4 |             4 |                      4 |                5 |                   5 |
 
 ### 2.4 Mérföldkövek:
@@ -31,37 +31,48 @@ A rendszer célja, hogy a felhasználó bolti körülmények között tudjon tra
 
 Az üzleti folyamatok modelljének elkészítése során célszerű ábrák és leírások segítségével bemutatni, hogyan zajlanak le az egyes tevékenységek és folyamatok a rendszerben. Az alábbiakban néhány példa található az üzleti folyamatok modelljének kialakításához:
 
-3.1. Napnyitási folyamat:
+## 3.1. Napnyitási folyamat:
 
 Cél: Az adott munkanap pénzmennyiségének eltárolása és a pénztárgép felületére való továbblépés.
 
 Folyamat:
 
-1.1. Felhasználó bejelentkezik a rendszerbe.
-1.2. A felhasználó kiválasztja a "Napnyitás" opciót.
-1.3. A rendszer lehetővé teszi a felhasználó számára a pénzmennyiség rögzítését a műszak kezdésekor.
-1.4. A rendszer engedélyezi a felhasználót, hogy továbblépjen a pénztárgép felületére.
+ 1.1. 
+ * Felhasználó bejelentkezik a rendszerbe.
+ 1.2. 
+ * A felhasználó kiválasztja a "Napnyitás" opciót.
+ 1.3. 
+ * A rendszer lehetővé teszi a felhasználó számára a pénzmennyiség rögzítését a műszak kezdésekor.
+ 1.4. 
+ * A rendszer engedélyezi a felhasználót, hogy továbblépjen a pénztárgép felületére.
 
-3.2. Tranzakció végrehajtás folyamata:
+## 3.2. Tranzakció végrehajtás folyamata:
 
 Cél: Tranzakciók végrehajtása pénzhasználattal.
 
 Folyamat:
 
-1.1. Felhasználó választ egy árucikket a kínálatból.
-1.2. A rendszer lehetőséget ad az árucikk mennyiségének és értékének megadására (HUF).
-1.3. Ha a vevő nagyobb összeget ad át, mint amennyi a tranzakció értéke, a rendszer kiszámolja és visszaadja a visszajárót.
-1.4. A rendszer rögzíti a tranzakciót és a pénzforgalmat.
+ 1.1. 
+ * Felhasználó választ egy árucikket a kínálatból.
+ 1.2.
+ * A rendszer lehetőséget ad az árucikk mennyiségének és értékének megadására (HUF).
+ 1.3.
+ * Ha a vevő nagyobb összeget ad át, mint amennyi a tranzakció értéke, a rendszer kiszámolja és visszaadja a visszajárót.
+ 1.4.
+ * A rendszer rögzíti a tranzakciót és a pénzforgalmat.
 
-3.3. Napzárás folyamata:
+## 3.3. Napzárás folyamata:
 
 Cél: Az adott nap pénzforgalmának logolása és átláthatóan történő tárolása.
 
 Folyamat:
 
-1.1. Felhasználó bejelentkezik a rendszerbe.
-1.2. A felhasználó választja a "Napzárás" opciót.
-1.3. A rendszer összegzi az adott nap során történt tranzakciókat és pénzmennyiségeket.
+1.1. 
+ * Felhasználó bejelentkezik a rendszerbe.
+1.2. 
+ * A felhasználó választja a "Napzárás" opciót.
+1.3. 
+ * A rendszer összegzi az adott nap során történt tranzakciókat és pénzmennyiségeket.
 
 Ezek csupán példák az üzleti folyamatok modelljének elkészítéséhez. A valóságban részletes folyamatokat és ábrákat is érdemes készíteni, hogy pontosan látható legyen, hogyan működik a rendszer a felhasználók szemszögéből.
 
@@ -92,9 +103,8 @@ Felhasználó
 
 ### 5.2 Menühierarchiák
    * Napnyitás
-      * Kasszában lévő nyitóegyenleg 
-      * Belépés
-
+   * Kasszában lévő nyitóegyenleg 
+   * Belépés
    * Munkafelület
 
 ## 6. Fizikai környezet
@@ -112,51 +122,47 @@ Felhasználó
 
 Az absztrakt domain modell célja, hogy általánosan és absztrakt módon ábrázolja a rendszer fő komponenseit, entitásait és azok közötti kapcsolatokat.
 
--Felhasználók: Felhasználók, akik a rendszert használják.
--Felhasználók jogosultságokkal rendelkeznek a pénztár-nyitás és tranzakciók végrehajtása terén.
+* Felhasználók: Felhasználók, akik a rendszert használják.
+* Felhasználók jogosultságokkal rendelkeznek a pénztár-nyitás és tranzakciók végrehajtása terén.
 
 Napnyitási Felület:
--Az adott munkanap pénzmennyiségének eltárolására szolgáló felület
--Lehetővé teszi a munkanap kezdeti pénzmennyiségének rögzítését.
--Engedélyezi a továbblépést a pénztárgép felületére.
+* Az adott munkanap pénzmennyiségének eltárolására szolgáló felület
+* Lehetővé teszi a munkanap kezdeti pénzmennyiségének rögzítését.
+* Engedélyezi a továbblépést a pénztárgép felületére.
 
 Pénztárgép Felület: 
--Az alapfunkciók végrehajtásara szolgáló felület.
--Lehetővé teszi tranzakciók létrehozását és azok rögzítését.
--Számolja és kezeli a visszajárót.
+* Az alapfunkciók végrehajtásara szolgáló felület.
+* Lehetővé teszi tranzakciók létrehozását és azok rögzítését.
+* Számolja és kezeli a visszajárót.
 
 Tranzakciók:
--Az eladások vagy vásárlások rögzített eseményei.
--Tartalmazzák az árucikkek, mennyiségek és értékek adatait.
--A tranzakciókhoz kapcsolódik a visszajáró összeg.
+* Az eladások vagy vásárlások rögzített eseményei.
+* Tartalmazzák az árucikkek, mennyiségek és értékek adatait.
+* A tranzakciókhoz kapcsolódik a visszajáró összeg.
 
 Ez egy egyszerű példa az absztrakt domain modellre. A valoságban a rendszer sokkal komplexebb lehet.
 
 ## 8. Architekturális terv
 
-Alkalmazás Réteg:
+## Alkalmazás Réteg:
 
-Webes Felület (Frontend):
--Az alkalmazás felhasználói felülete, amelyet a böngészőből érhetnek el a felhasználók.
--Minimalista és intuitív tervezés a könnyű használhatóság érdekében.
--A webes felület HTML, CSS és JavaScript technológiák segítségével készül.
+## Webes Felület (Frontend):
+* Az alkalmazás felhasználói felülete, amelyet a böngészőből érhetnek el a felhasználók.
+* Minimalista és intuitív tervezés a könnyű használhatóság érdekében.
+* A webes felület HTML, CSS és JavaScript technológiák segítségével készül.
 
-Kliensoldali Logika:
--A frontend-en futó JavaScript alkalmazás, amely felelős a felhasználói interakciók kezeléséért.
--Kommunikál a szerverrel API-hívások segítségével.
+## Kliensoldali Logika:
+* A frontend-en futó JavaScript alkalmazás, amely felelős a felhasználói interakciók kezeléséért.
+* Kommunikál a szerverrel API-hívások segítségével.
 
-Üzleti Logika Réteg:
+## Üzleti Logika Réteg:
 
 Szerveroldali Alkalmazás:
--Ezen a rétegen fut az üzleti logika és a rendszer működésének alapja.
--Kezeli a tranzakciók, az árucikkek, a pénzkezelés és a napzárás folyamatait.
--Biztosítja az adatbázis hozzáférést.
-
-### Webszerver
-
-### Adatbázis rendszer
+* Ezen a rétegen fut az üzleti logika és a rendszer működésének alapja.
+* Kezeli a tranzakciók, az árucikkek, a pénzkezelés és a napzárás,nyitás folyamatait.
 
 ### A program elérése, kezelése
+A programot a HTML kiterjesztésű fájllal lehet indítani, ami megnyitja online a programot.
 
 ## 10. Implementációs terv
 
@@ -173,27 +179,26 @@ Egy teszt eredményeit a tagok dokumentálják külön fájlokba.
  |-----------|-----------------| 
  | ... | ... |
 
-### A tesztelési jegyzőkönyv kitöltésére egy sablon:
+### A tesztelési jegyzőkönyv:
 
-**Tesztelő:** Vezetéknév Keresztnév
+**Tesztelő:** A csapat tagjai
 
-**Tesztelés dátuma:** Év.Hónap.Nap
+**Tesztelés dátuma:** 2023.10.04
 
 Tesztszám | Rövid leírás | Várt eredmény | Eredmény | Megjegyzés
 ----------|--------------|---------------|----------|-----------
-például. Teszt #01 | Regisztráció | A felhasználó az adatok megadásával sikeresen regisztrálni tud  | A felhasználó sikeresen regisztrált | Nem találtam problémát.
-... | ... | ... | ... | ...
+Teszt #01 | Napnyitás | A felhasználó a napi kezdő egyenleg megadásával aktiuválja a pénztárgép felületét.  | A felhasználó sikeresen felvitte az adatokat, a rendszer engedélyezte a pénztár használatát. | Nem találtam problémát.
+Teszt #02 | Gombok funkciói | Az összes gomb reagál a felhasználó által adott impulzusokra  | A felhasználó az összes gomb egymás utáni végigpróbálására mindegyik gomb reagál | Nem találtam problémát
+Teszt #03 | Megjelenítő | A felhasználó számára fontos számadatok és műveleti jelek megjelennek a kijelzőn | A kijelző megjeleníti az adatokat | Nem találtam hibát
+Teszt #04 | Műveletek | A felhasználó a bevitt adatokkal és műveleti jelek segítségével az "egyenlő" jel megnyomásával a kijelzőn a helyes érték jelenik meg | A program helyesen számol | Nem találtam hibát
+Teszt #05 | Valutaváltás | A vásárló összes árucikkének felvitele után a végösszeget lehessen euróra váltani, vagy adott esetben euróról vissza | Mindkét esetben helyes érték jelenik meg a kijelzőn az adott valutával kapcsolatban | Mindenképpen be kell vinni az adatot az "egyenlő" jellel, hogy e-funkció működjön 
 
 ## 12. Telepítési terv
-
-Fizikai telepítési terv: 
-
 Szoftver telepítési terv: 
+Nincs szükség külön telepítésre, a szoftver bármely webböngésző indításával futtatható.
 
 ## 13. Karbantartási terv
 
-Fontos ellenőrizni:
-...
 
 Figyelembe kell venni a felhasználó által jött visszajelzést is a programmal kapcsolatban.
 Ha hibát talált, mielőbb orvosolni kell, lehet az:
