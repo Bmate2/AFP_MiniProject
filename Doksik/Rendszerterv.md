@@ -86,12 +86,6 @@ Ezek csupán példák az üzleti folyamatok modelljének elkészítéséhez. A v
    * Vevő által nagyobb összeg átadása esetén visszajáró kiszámolása
    * Nyugta kinyomtatása, egyidőben a tranzakció NAV felé való közlése (HUF)
 
-### Funkcionális követelmények
-
-| ID | Megnevezés | Leírás |
-| --- | --- | --- |
-| K1 | ... | ... |
-
 ### Nemfunkcionális követelmények
 
 A felhasználó nem férhet hozzá az ideiglenes értéktároláshoz, azokat meg nem változtathatja.
@@ -144,34 +138,37 @@ Ez egy egyszerű példa az absztrakt domain modellre. A valoságban a rendszer s
 
 ## 8. Architekturális terv
 
-## Alkalmazás Réteg:
+## 9. Alkalmazás Réteg:
 
-## Webes Felület (Frontend):
+### Webes Felület (Frontend):
 * Az alkalmazás felhasználói felülete, amelyet a böngészőből érhetnek el a felhasználók.
 * Minimalista és intuitív tervezés a könnyű használhatóság érdekében.
 * A webes felület HTML, CSS és JavaScript technológiák segítségével készül.
 
-## Kliensoldali Logika:
+### Kliensoldali Logika (Backend):
 * A frontend-en futó JavaScript alkalmazás, amely felelős a felhasználói interakciók kezeléséért.
 * Kommunikál a szerverrel API-hívások segítségével.
 
-## Üzleti Logika Réteg:
+### Üzleti Logika Réteg:
 
 Szerveroldali Alkalmazás:
 * Ezen a rétegen fut az üzleti logika és a rendszer működésének alapja.
 * Kezeli a tranzakciók, az árucikkek, a pénzkezelés és a napzárás,nyitás folyamatait.
 
-### A program elérése, kezelése
+#### A program elérése, kezelése
 A programot a HTML kiterjesztésű fájllal lehet indítani, ami megnyitja online a programot.
 
 ## 10. Implementációs terv
+A Webes felület főként HTML, CSS, és Javascript nyelven fog készülni.
+Ezeket a technológiákat, amennyire csak lehet, külön fájlokba írva készítjük, és
+úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság,
+és könnyebb bővítés érdekében.
 
 ## 11. Tesztterv
 
 A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata,
 ellenőrzése a rendszer által megvalósított üzleti szolgáltatások verifikálása.
 A teszteléseket a fejlesztői csapat minden tagja elvégzi.
-Egy teszt eredményeit a tagok dokumentálják külön fájlokba.
 
 ### Tesztesetek
 
@@ -198,7 +195,6 @@ Szoftver telepítési terv:
 Nincs szükség külön telepítésre, a szoftver bármely webböngésző indításával futtatható.
 
 ## 13. Karbantartási terv
-
 
 Figyelembe kell venni a felhasználó által jött visszajelzést is a programmal kapcsolatban.
 Ha hibát talált, mielőbb orvosolni kell, lehet az:
