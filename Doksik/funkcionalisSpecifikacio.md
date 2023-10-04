@@ -29,7 +29,7 @@ Az igényelt, egyszerűsített pénztárgép olyan eszköz lenne, amely könnyen
 
 ## 6. Használati esetek
 
-Az alkalmazásunk két használati esettel rendelkezik ami az első ami a napi nyitás előtt van, ami csak abból áll hogy meg tudja adni hogy mennyi pénzzel kezdte az adott napot, a második eset amikor tudja használni a user az összes funkcióját a pénztárgépnek.
+Az alkalmazásunk két használati esettel rendelkezik: Az első, ami a napi nyitás előtt van, csak abból áll hogy meg kell adni, hogy mennyi pénzzel kezdte az adott napot a felhasználó. A második eset amikor a usernek hozzáférése van az összes funkcióhoz a pénztárgépben.
 
 ## 7. Képernyőtervek
 
