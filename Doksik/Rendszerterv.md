@@ -190,6 +190,8 @@ Teszt #03 | Megjelenítő | A felhasználó számára fontos számadatok és mű
 Teszt #04 | Műveletek | A felhasználó a bevitt adatokkal és műveleti jelek segítségével az "egyenlő" jel megnyomásával a kijelzőn a helyes érték jelenik meg | A program helyesen számol | Nem találtam hibát
 Teszt #05 | Valutaváltás | A vásárló összes árucikkének felvitele után a végösszeget lehessen euróra váltani, vagy adott esetben euróról vissza | Mindkét esetben helyes érték jelenik meg a kijelzőn az adott valutával kapcsolatban | Mindenképpen be kell vinni az adatot az "egyenlő" jellel, hogy e-funkció működjön 
 Teszt #06 | Sok karakter | A felhasználó sok árat akar felvinni a számológépbe, így túlfutna a kijelzőn a műveletsorozat, így az elejét el kellene tűntetni a kijelzőről | A számok túlfutnak a programon, nem megfelelő a kijelzés | A teszt során hibát találtam
+Teszt #07 | Sok karakter | A felhasználó sok árat akar felvinni a számológépbe, így túlfutna a kijelzőn a műveletsorozat, így az elejét el kellene tűntetni a kijelzőről | A számokbal oldalon eltűnnek a látható területről, de a hozzáadott árak láthatóak| Nem találtam problémát
+
 
 ## 12. Telepítési terv
 Szoftver telepítési terv: 
